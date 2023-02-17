@@ -8,13 +8,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images/websitebackground.png);
+    background-image: url(websitebackground.png);
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/backgroundfinal.png);
+    background-image: url(backgroundfinal.png);
     background-size: cover;
     background-position: center;
 
@@ -169,7 +169,7 @@ nav ul li a:hover::after{
     transform: translateY(-15px);    
 }
 
-/*---------------------PORTFOLIO----------------*/
+/*----------------------------------------------------------------------PORTFOLIO--------------------------------------------------------------------*/
 #portfolio{
     padding: 50px 0;
 }
@@ -246,7 +246,7 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/*------------------------CONTACT ----------------------*/
+/*----------------------------------------------------------------------------------CONTACT-------------------------------------------------------------------------*/
 
 .contact-left{
     flex-basis: 35%;
@@ -312,7 +312,7 @@ form btn2{
     margin-top: 20px;
 }
 
-/*----------------------------------CSS for Small Screen---------------------*/
+/*---------------------------------------------------------------------------------------CSS for Mobile Screen-----------------------------------------------------------------*/
 
 
 nav .fa-solid{
@@ -321,7 +321,7 @@ nav .fa-solid{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/VijayPhone.png);
+        background-image: url(VijayPhone.png);
 
     }
     .header-text{
