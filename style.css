@@ -10,9 +10,6 @@ html{
 body{
     background-image: url(websitebackground.png);
 }
-.background{
-    background-positiion: fill;
-}
 #header{
     width: 100%;
     height: 100vh;
