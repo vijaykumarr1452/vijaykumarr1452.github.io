@@ -8,13 +8,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(websitebackground);
-    color: #fff;
+    background-image: url(websitebackground.png);
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(backgroundfinal);
+    background-image: url(backgroundfinal.png);
     background-size: cover;
     background-position: center;
 
