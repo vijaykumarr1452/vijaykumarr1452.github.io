@@ -9,6 +9,7 @@ html{
 }
 body{
     background-image: url(websitebackground.png);
+    color: #fff;
 }
 #header{
     width: 100%;
