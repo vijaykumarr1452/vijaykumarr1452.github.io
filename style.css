@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(websitebackground.png);
-    color: #fff;
+    background-color: #162331a3;
+   
 }
 #header{
     width: 100%;
