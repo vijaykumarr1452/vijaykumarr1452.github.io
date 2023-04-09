@@ -9,6 +9,7 @@ html{
 }
 body{
     background-image: url(backgroundfinal.png);
+    background-size: cover;
    
 }
 #header{
