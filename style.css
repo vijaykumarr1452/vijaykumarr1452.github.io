@@ -271,15 +271,15 @@ nav ul li a:hover::after{
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 40px;
+    font-size: 65px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
-    transition: transform 0.5s;
+    transition: transform 0.7s;
 }
 .social-icons a:hover{
     color: #ff004f;
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 .btn.btn2{
     display: inline-block;
@@ -324,7 +324,7 @@ nav .fa-solid{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(VijayPhone.png);
+        background-image: #fff;
 
     }
     .header-text{
