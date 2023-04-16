@@ -8,14 +8,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(backgroundfinal.png);
+    background-image: #fff;
+/*-------    background-image: url(backgroundfinal.png) -------------*/
     background-size: cover;
    
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(backgroundfinal.png);
+    background-image: #fff;
     background-size: cover;
     background-position: center;
 
@@ -96,6 +97,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    
 }
 .sub-title{
     font-size: 60px;
