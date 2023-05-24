@@ -49,7 +49,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #c9042c;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,10 +70,10 @@ nav ul li a:hover::after{
     color:#fff;
 }
 .header-text h1 span{
-    color:#ff004f;
+    color:#c9042c;
 }
 .btn.btn3{
-    background: #ff004f;
+    background:#c9042c;
     margin-left: 135px;
 }
 /*-------------------------about----------------*/
@@ -123,7 +123,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #c9042c;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -223,7 +223,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #c9042c;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -243,7 +243,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #c9042c;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -251,7 +251,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #c9042c;
 }
 
 /*----------------------------------------------------------------------------------CONTACT-------------------------------------------------------------------------*/
@@ -268,7 +268,7 @@ nav ul li a:hover::after{
     font-size: 35px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #c9042c;
     margin-right: 18px;
     font-size: 40px;
 }
@@ -284,12 +284,12 @@ nav ul li a:hover::after{
     transition: transform 0.9s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #c9042c;
     transform: translateY(-7px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #c9042c;
 }
 
 /*------------------------------
@@ -348,7 +348,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-    background: #ff004f;
+    background: #c9042c;
     position: fixed;
     top: 0;
     right: -200px;
