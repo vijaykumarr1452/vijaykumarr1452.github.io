@@ -42,7 +42,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
 }
 nav ul li a::after{
@@ -65,7 +65,7 @@ nav ul li a:hover::after{
     color:#fff;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
     color:#fff;
 }
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
     background:#c9042c;
     margin-left: 135px;
 }
-/*-------------------------about----------------*/
+/*------------------------------------------about------------ -------------------------------------*/
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -104,7 +104,7 @@ nav ul li a:hover::after{
     
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
     color: #fff;
 }
@@ -114,7 +114,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -164,11 +164,11 @@ nav ul li a:hover::after{
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 30px;
 }
 .education-list h3{
     color: yellowgreen;
-    font-size: 28px;    
+    font-size: 26px;    
 }
 .education-list h4{
     color: #682f2f;   
@@ -216,9 +216,9 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: 0.5s;
 }
-.layer h3{
+.layer h2{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 .layer a{
@@ -254,30 +254,31 @@ nav ul li a:hover::after{
     background: #c9042c;
 }
 
-/*----------------------------------------------------------------------------------CONTACT-------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------CONTACT-------------------------------------------------------------*/
 
 .contact-left{
     flex-basis: 50%;
 
 }
-.contact-right{
-    flex-basis: 50%;
+/*--.contact-right{
+    flex-basis: 50%;  */
 }
 .contact-left p{
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 25px;
+    color: #c9042c;
 }
 .contact-left p i{
-    color: #c9042c;
+    color: #ababab;
     margin-right: 18px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 65px;
+    font-size: 45px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
@@ -318,10 +319,10 @@ form btn2{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px;
+    padding: 16px;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 /*------------------------------------------CSS for Mobile Screen--------------------------------------------------*/
