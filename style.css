@@ -264,22 +264,23 @@ nav ul li a:hover::after{
     flex-basis: 50%;  */
 }
 .contact-left p{
-    margin-top: 30px;
-    font-size: 25px;
+    margin-top: 50px;
+    font-size: 35px;
     color: #c9042c;
 }
 .contact-left p i{
     color: #ababab;
-    margin-right: 18px;
-    font-size: 30px;
+    margin-right: 20x;
+    font-size: 42px;
 }
 .social-icons{
-    margin-top: 24px;
+    margin-top: 50px;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 45px;
-    margin-right: 15px;
+    font-size: 48px;
+    margin-top: 18px;
+    margin-right: 20px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.9s;
