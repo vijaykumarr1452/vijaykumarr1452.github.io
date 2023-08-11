@@ -147,7 +147,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*-------------------------EDUCATIION------------------------*/
+/*--------------------------------------------------------------------EDUCATIION--------------------------------------------------------*/
 #education{
     padding: 30px 0;
     color: #ababab;
@@ -257,33 +257,33 @@ nav ul li a:hover::after{
 /*-----------------------------------------------------------------------CONTACT-------------------------------------------------------------*/
 
 .contact-left{
-    flex-basis: 50%;
+    flex-basis: 40%;
 
 }
 /*--.contact-right{
     flex-basis: 50%;  */
 }
 .contact-left p{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 35px;
     color: #c9042c;
 }
 .contact-left p i{
-    color: #ababab;
-    margin-right: 20x;
-    font-size: 42px;
+    color: #ff004f;
+    margin-right: 15x;
+    font-size: 35px;
 }
 .social-icons{
     margin-top: 50px;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 48px;
+    font-size: 38px;
     margin-top: 18px;
-    margin-right: 20px;
+    margin-right: 18px;
     color: #ababab;
     display: inline-block;
-    transition: transform 0.9s;
+    transition: transform 0.6s;
 }
 .social-icons a:hover{
     color: #c9042c;
@@ -291,7 +291,7 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
-    background: #c9042c;
+    background: #ff004f;
 }
 
 /*------------------------------
