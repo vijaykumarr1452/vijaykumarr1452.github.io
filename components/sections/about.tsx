@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 const skills = [
   "React/Next.js",

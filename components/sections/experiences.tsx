@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { GitlabIcon as GitHub, Linkedin, Mail, Calendar, X } from 'lucide-react'
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 
 // Define the type for an experience

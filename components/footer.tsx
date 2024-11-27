@@ -3,7 +3,7 @@
 import { Github, Linkedin, Mail, Twitter, Users } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export function Footer() {
   const [textColors, setTextColors] = useState(['text-blue-500', 'text-green-500', 'text-yellow-500', 'text-purple-500', 'text-pink-500'])
