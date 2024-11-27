@@ -3,7 +3,7 @@
 import { Github, Linkedin, Mail, Twitter, Users } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 export function Footer() {
   const [textColors, setTextColors] = useState(['text-blue-500', 'text-green-500', 'text-yellow-500', 'text-purple-500', 'text-pink-500'])
@@ -51,7 +51,7 @@ export function Footer() {
   
 
   return (
-    <footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-300">
+    (<footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
@@ -62,8 +62,11 @@ export function Footer() {
                 width={100}
                 height={100}
                 className="rounded-full border-4 border-primary shadow-lg transition-all duration-300 hover:scale-110 group-hover:shadow-primary/50"
-                style={{ transform: `rotate(${imageRotation}deg)` }}
-              />
+                style={{
+                  transform: `rotate(${imageRotation}deg)`,
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <div className={`absolute -inset-2 rounded-full opacity-50 animate-pulse bg-gradient-to-r ${glowColors[profileGlow]} blur-md transition-all duration-1000`}></div>
               <div className="absolute -inset-2 rounded-full opacity-25 animate-ping bg-gradient-to-r from-primary via-secondary to-primary"></div>
             </div>
@@ -151,6 +154,6 @@ export function Footer() {
           50% { transform: translateY(-20px) rotate(10deg); }
         }
       `}</style>
-    </footer>
-  )
+    </footer>)
+  );
 }

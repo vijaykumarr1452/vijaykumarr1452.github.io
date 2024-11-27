@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 const skills = [
   "React/Next.js",
@@ -40,7 +40,7 @@ export function AboutSection() {
   const [showBio, setShowBio] = useState(false)
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
+    (<section id="about" className="py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
       <div className="container px-4 mx-auto relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,10 @@ export function AboutSection() {
                 fill
                 className="object-cover"
                 priority
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
                 initial={{ opacity: 0 }}
@@ -235,6 +238,6 @@ export function AboutSection() {
           <div className="absolute bottom-0 left-1/2 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
         </div>
       </div>
-    </section>
-  )
+    </section>)
+  );
 }

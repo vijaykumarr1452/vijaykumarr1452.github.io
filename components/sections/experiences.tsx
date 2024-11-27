@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { GitlabIcon as GitHub, Linkedin, Mail, Calendar, X } from 'lucide-react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 
 // Define the type for an experience
@@ -87,7 +87,7 @@ export function ExperienceSection() {
   const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
 
   return (
-    <section id="experiences" className="py-24 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    (<section id="experiences" className="py-24 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
       <div className="container px-4 mx-auto">
         <motion.div
           initial="hidden"
@@ -124,9 +124,11 @@ export function ExperienceSection() {
                         <Image
                           src={experience.companyLogo}
                           alt={experience.company}
-                          layout="fill"
-                          objectFit="cover"
-                        />
+                          fill
+                          sizes="100vw"
+                          style={{
+                            objectFit: "cover"
+                          }} />
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-white">{experience.role}</h3>
@@ -170,7 +172,6 @@ export function ExperienceSection() {
           </div>
         </motion.div>
       </div>
-
       <AnimatePresence>
         {selectedExperience && (
           <motion.div
@@ -227,6 +228,6 @@ export function ExperienceSection() {
           </motion.div>
         )}
       </AnimatePresence>
-    </section>
-  )
+    </section>)
+  );
 }
