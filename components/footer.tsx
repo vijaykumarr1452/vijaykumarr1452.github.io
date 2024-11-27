@@ -48,6 +48,7 @@ export function Footer() {
     'from-green-400 via-blue-400 to-indigo-400',
     'from-purple-400 via-pink-400 to-red-400',
   ]
+  
 
   return (
     <footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-300">
@@ -56,8 +57,8 @@ export function Footer() {
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <div className="mb-4 relative group">
               <Image
-                src="https://tinyurl.com/25l56ouh"
-                alt="Aniruddha Adak"
+                src="https://tinyurl.com/faviconvj"
+                alt="Rachuri Vijay Kumar"
                 width={100}
                 height={100}
                 className="rounded-full border-4 border-primary shadow-lg transition-all duration-300 hover:scale-110 group-hover:shadow-primary/50"
@@ -67,19 +68,19 @@ export function Footer() {
               <div className="absolute -inset-2 rounded-full opacity-25 animate-ping bg-gradient-to-r from-primary via-secondary to-primary"></div>
             </div>
             {[ 
-              "© 2024 Folio Motion. All rights reserved.",
-              "Created by ANIRUDDHA ADAK",
-              "Phone: +917029155691",
-              "Email: aniruddhaadak80@gmail.com"
+              "© 2024 VJ Creations. All rights reserved.",
+              "Created by VIJAY RACHURI",
+              "Phone: +91 8186916414",
+              "Email: vijaykumarit45@gmail.com"
             ].map((text, index) => (
               <p
                 key={index}
                 className={`mt-1 text-sm font-medium ${textColors[index]} transition-colors duration-500 ease-in-out animate-pulse hover:scale-105 transform`}
               >
                 {text.startsWith('Phone:') ? (
-                  <>Phone: <a href="tel:+917029155691" className="hover:underline hover:text-primary transition-colors duration-300">+917029155691</a></>
+                  <>Phone: <a href="tel:+91 8186916414" className="hover:underline hover:text-primary transition-colors duration-300">+91 8186916414</a></>
                 ) : text.startsWith('Email:') ? (
-                  <>Email: <a href="mailto:aniruddhaadak80@gmail.com" className="hover:underline hover:text-primary transition-colors duration-300">aniruddhaadak80@gmail.com</a></>
+                  <>Email: <a href="mailto:vijaykumarit45@gmail.com" className="hover:underline hover:text-primary transition-colors duration-300">vijaykumarit45@gmail.com</a></>
                 ) : text}
               </p>
             ))}
@@ -87,10 +88,10 @@ export function Footer() {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex space-x-4">
               {[ 
-                { icon: Github, href: "https://github.com/aniruddhaadak80", color: "text-purple-500" },
-                { icon: Linkedin, href: "https://linkedin.com/in/aniruddha-adak", color: "text-blue-500" },
-                { icon: Twitter, href: "https://twitter.com/aniruddha_adak", color: "text-sky-500" },
-                { icon: Mail, href: "mailto:aniruddhaadak80@gmail.com", color: "text-red-500" },
+                { icon: Github, href: "https://github.com/vijaykumarr1452", color: "text-purple-500" },
+                { icon: Linkedin, href: "https://linkedin.com/in/rachuri-vijaykumar", color: "text-blue-500" },
+                { icon: Twitter, href: "https://twitter.com/vijay_viju1", color: "text-sky-500" },
+                { icon: Mail, href: "mailto:vijaykumarit45@gmail.com", color: "text-red-500" },
                 { icon: Users, href: "#contributors", color: "text-green-500" }
               ].map((social, index) => (
                 <Button
@@ -112,7 +113,7 @@ export function Footer() {
                 </Button>
               ))}
             </div>
-            <div id="contributors" className="text-center">
+            {/* <div id="contributors" className="text-center">
               <h3 className="text-lg font-semibold mb-2 text-primary animate-bounce">Contributors</h3>
               <div className="flex justify-center space-x-4">
                 {[0, 1, 2].map((index) => (
@@ -132,7 +133,7 @@ export function Footer() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

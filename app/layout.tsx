@@ -9,10 +9,10 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Folio Motion - Interactive Developer Portfolio',
-  description: 'Folio Motion is a dynamic and visually engaging developer portfolio designed to showcase the skills, projects, and experiences of a modern developer. With a focus on cutting-edge web technologies such as Next.js, React, and Tailwind CSS, this portfolio highlights a deep understanding of both front-end and back-end development. It incorporates interactive animations, smooth transitions, and responsive design, offering visitors an immersive experience. Explore a collection of projects demonstrating expertise in UI/UX design, full-stack development, and more, alongside professional roles, certifications, and contributions to open-source communities.',
+  title: 'VIJAY RACHURI - Developer Portfolio',
+  description: 'This is a dynamic and visually engaging personal developer portfolio designed to showcase my experience, skills, and projects. With a focus on cutting-edge web technologies such as Next.js, React, and Tailwind CSS, this portfolio highlights a deep understanding of both front-end and back-end development. It incorporates interactive animations, smooth transitions, and responsive design, offering an immersive experience. Explore a collection of projects demonstrating expertise in UI/UX design, full-stack development, Machine Learning , Data Science and much more , alongside professional roles, certifications, and contributions to open-source communities.',
   icons: {
-    icon: 'https://tinyurl.com/2xhrkaao', // Link to your favicon
+    icon: 'https://tinyurl.com/faviconvjs', // Link to your favicon
   },
 };
 
@@ -24,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="https://tinyurl.com/2xhrkaao" />
+        {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/> */}
+        <link rel="icon" href="https://tinyurl.com/faviconvjs" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

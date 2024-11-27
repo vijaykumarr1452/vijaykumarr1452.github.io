@@ -52,7 +52,7 @@ export  function SkillSection() {
       level: 85, 
       icon: "nodejs-icon", 
       description: "Server-side JavaScript with Node.js",
-      projects: ["RESTful API", "Real-time Chat Application", "Task Management System"]
+      projects: ["RESTful API", "ChatCord Chat Application", "Task Management System"]
     },
     { 
       name: "CSS", 
@@ -145,7 +145,7 @@ export  function SkillSection() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-8"
           >
-            Here's a collection of my skills with their proficiency levels.
+            Here is a collection of my skills with their proficiency levels.
           </motion.p>
           <Button 
             onClick={() => setShowLevel(!showLevel)} 

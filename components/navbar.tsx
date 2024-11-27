@@ -55,7 +55,12 @@ export function Navbar() {
             href="/"
             className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity"
           >
-            FM
+             <img
+          src="https://tinyurl.com/vjlogo1"
+          alt="Logo"
+          style={{ width: '60px', height: '60px' }}
+          />
+
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

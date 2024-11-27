@@ -35,7 +35,7 @@ Follow these steps to get the project up and running locally:
 
 ### 1. **Clone the repository**:
 ```bash
-git clone https://github.com/aniruddhaadak80/folio-motion.git
+git clone https://github.com/vijaykumarr1452/portfolio-website.git
 ```
 
 ### 2. **Install dependencies**:
@@ -86,8 +86,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, feel free to reach out to me:
 
-- Email: [aniruddhaadak80@gmail.com](mailto:aniruddhaadak80@gmail.com)
-- GitHub: [Profile](https://github.com/aniruddhaadak80)
+- Email: [vijaykumarit45@gmail.com](vijaykumarit45@gmail.com)
+- GitHub: [Profile](https://github.com/vijaykumarr1452)
 
 ---
 
