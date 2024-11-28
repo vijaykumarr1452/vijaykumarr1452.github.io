@@ -9,7 +9,7 @@ export function Footer() {
   const [textColors, setTextColors] = useState(['text-blue-500', 'text-green-500', 'text-yellow-500', 'text-purple-500', 'text-pink-500'])
   const [imageRotation, setImageRotation] = useState(0)
   const [profileGlow, setProfileGlow] = useState(0)
-  const [contributorScales, setContributorScales] = useState([1, 1, 1])
+  // const [contributorScales, setContributorScales] = useState([1, 1, 1])
 
   useEffect(() => {
     const colorInterval = setInterval(() => {
@@ -24,19 +24,19 @@ export function Footer() {
       setProfileGlow(prev => (prev + 1) % 6)
     }, 1000)
 
-    const scaleInterval = setInterval(() => {
-      setContributorScales(prev => [
-        1 + Math.sin(Date.now() / 1000) * 0.2,
-        1 + Math.sin(Date.now() / 800) * 0.2,
-        1 + Math.sin(Date.now() / 600) * 0.2,
-      ])
-    }, 50)
+    // const scaleInterval = setInterval(() => {
+    //   setContributorScales(prev => [
+    //     1 + Math.sin(Date.now() / 1000) * 0.2,
+    //     1 + Math.sin(Date.now() / 800) * 0.2,
+    //     1 + Math.sin(Date.now() / 600) * 0.2,
+    //   ])
+    // }, 50)
 
     return () => {
       clearInterval(colorInterval)
       clearInterval(rotationInterval)
       clearInterval(glowInterval)
-      clearInterval(scaleInterval)
+      // clearInterval(scaleInterval)
     }
   }, [])
 
@@ -116,7 +116,7 @@ export function Footer() {
                 </Button>
               ))}
             </div>
-            {/* <div id="contributors" className="text-center">
+            <div id="contributors" className="text-center">
               <h3 className="text-lg font-semibold mb-2 text-primary animate-bounce">Contributors</h3>
               <div className="flex justify-center space-x-4">
                 {[0, 1, 2].map((index) => (
@@ -128,7 +128,7 @@ export function Footer() {
                       height={40}
                       className="rounded-full border-2 border-primary transition-all duration-300 hover:border-4"
                       style={{
-                        transform: `scale(${contributorScales[index]})`,
+                        // transform: `scale(${contributorScales[index]})`,
                         animation: `float${index + 1} ${3 + index}s ease-in-out infinite`
                       }}
                     />
@@ -136,7 +136,7 @@ export function Footer() {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
@@ -157,3 +157,4 @@ export function Footer() {
     </footer>)
   );
 }
+

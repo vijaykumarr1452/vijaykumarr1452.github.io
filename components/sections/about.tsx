@@ -24,10 +24,10 @@ const interests = [
 ]
 
 const floatingAnimation = {
-  y: ["-10%", "10%"],
+  y: ["-17%", "17%"],
   transition: {
     y: {
-      duration: 2,
+      duration: 1.6,
       repeat: Infinity,
       repeatType: "reverse",
       ease: "easeInOut"
@@ -59,14 +59,14 @@ export function AboutSection() {
               className="relative aspect-square rounded-2xl overflow-hidden"
             >
               <Image
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1288&auto=format&fit=crop"
+                src="https://tinyurl.com/vjimage"
                 alt="Profile"
                 fill
                 className="object-cover"
                 priority
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
+                  // height: "auto"
                 }} />
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
@@ -104,7 +104,7 @@ export function AboutSection() {
                     transition={{ duration: 0.3 }}
                     className="text-muted-foreground"
                   >
-                    I'm a passionate developer focused on creating beautiful and functional web experiences. 
+                    I am a passionate developer focused on creating beautiful and functional web experiences. 
                     With expertise in modern web technologies, I bring ideas to life through clean code and 
                     thoughtful design. My journey in tech started with a fascination for problem-solving and 
                     has evolved into a career dedicated to crafting intuitive digital solutions.
@@ -118,7 +118,7 @@ export function AboutSection() {
                     transition={{ duration: 0.3 }}
                     className="text-muted-foreground"
                   >
-                    I'm a passionate developer focused on creating beautiful and functional web experiences...
+                    I am a passionate developer focused on creating beautiful and functional web experiences...
                   </motion.p>
                 )}
               </AnimatePresence>
