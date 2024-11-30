@@ -86,8 +86,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, feel free to reach out to me:
 
-- Email: [vijaykumarit45@gmail.com](vijaykumarit45@gmail.com)
+- Email: [vijaykumarit45@gmail.com](mailto:vijaykumarit45@gmail.com)
 - GitHub: [Profile](https://github.com/vijaykumarr1452)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/rachuri-vijaykumar/)
+- Twitter: [Twitter](https://x.com/vijay_viju1)
+
+Let me know if you'd like me to refine this further or add any specific features! 😊
 
 ---
 
