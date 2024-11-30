@@ -22,15 +22,15 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "AI-Powered Task Manager",
-    description: "An intelligent task management system that uses machine learning to prioritize and categorize tasks.",
-    image: "https://tinyurl.com/226ofh39",
+    title: "Clinic Management System 🌐",
+    description: "An application designed to ease the process of streamlining and managing clinic operations,data efficiently.",
+    image: "https://tinyurl.com/dshgkktuy",
     color: "from-blue-500 to-purple-600",
     textColor: "text-blue-100",
-    details: "This project leverages natural language processing to understand task descriptions and automatically assign priorities. It also includes a smart scheduling feature that optimizes your daily workflow.",
-    technologies: ["React", "Node.js", "TensorFlow.js", "MongoDB"],
-    github: "https://github.com/yourusername/ai-task-manager",
-    live: "https://ai-task-manager.example.com"
+    details: "The Clinic Management System (CMS) is a full-stack web application designed to streamline clinic operations. It is built with features such as 'Patient History Management', 'Appointment Scheduling', 'Staff Management' and 'accessing Patient Medical Records' inturn eases these workflows for efficient Clinic Management.These services are currently being employed at Global Health Services Pvt Ltd.",
+    technologies: ["Angular", "Node.js", "Python", "MySQL", "OpenCV","PostgreSQL","AWS"],
+    github: "https://github.com/vijaykumarr1452/Clinic-Management-System",
+    live: "https://www.myecho.co.in/"
   },
   {
     id: 2,
@@ -41,20 +41,20 @@ const projects: Project[] = [
     textColor: "text-green-100",
     details: "Users can choose from various virtual environments and workout types. The app tracks body movements using VR controllers and provides real-time feedback on form and performance.",
     technologies: ["Unity", "C#", "Oculus SDK", "Firebase"],
-    github: "https://github.com/yourusername/vr-fitness",
+    github: "https://github.com/vijaykumarr1452/Developer-Portfolio-Website",
     live: "https://vr-fitness.example.com"
   },
   {
     id: 3,
-    title: "Blockchain-based Supply Chain",
-    description: "A decentralized application for tracking products from manufacture to delivery, ensuring transparency and authenticity.",
-    image: "https://tinyurl.com/258xcbsc",
+    title: "Cric Score Predictor",
+    description: "This project leverages machine learning algorithms to predict the scores of cricket matches based on historical data and real-time match parameters.",
+    image: "https://tinyurl.com/vjproj2",
     color: "from-red-500 to-pink-600",
     textColor: "text-red-100",
-    details: "This dApp uses smart contracts to record each step of the supply chain process. It includes features like QR code scanning for instant product verification and a consumer-facing mobile app.",
-    technologies: ["Solidity", "React Native", "Web3.js", "IPFS"],
-    github: "https://github.com/yourusername/blockchain-supply-chain",
-    live: "https://blockchain-supply.example.com"
+    details: "For this project, I developed a predictive model to estimate the score range of IPL matches using various machine learning algorithms. I optimized models including Multiple-Linear Regression, Decision Tree, Random Forest, and AdaBoost Regression through GridSearchCV to fine-tune hyperparameters for enhanced accuracy.",
+    technologies: ["Machine Learning","Python","Random Forest","Decision Tree", "ML Regression", "HTML", "CSS","JS"],
+    github: "https://github.com/vijaykumarr1452/IPL-First-Innings-Score-Prediction",
+    live: "https://github.com/vijaykumarr1452/IPL-First-Innings-Score-Prediction-Deployment"
   }
 ];
 
@@ -81,7 +81,7 @@ export function ProjectSection() {
             <motion.h2
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.6 }}
               className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
             >
               Featured Projects
@@ -93,7 +93,7 @@ export function ProjectSection() {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
             >
-              Explore a collection of innovative projects that showcase my expertise in cutting-edge web technologies and creative problem-solving.
+              Dive into a curated showcase of impactful projects,demonstrating my proficiency in modern development tools and innovative solutions
             </motion.p>
           </div>
 
@@ -101,16 +101,16 @@ export function ProjectSection() {
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
-                className={`bg-gradient-to-br ${project.color} p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}
+                className={`bg-gradient-to-br ${project.color} p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:animate-shake hover:-translate-y-2`}
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5 + index * 0.1, duration: 0.6 }}
+                transition={{ delay: 0.1 + index * 0.1, duration: 0.3 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -120,28 +120,35 @@ export function ProjectSection() {
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
+                  transition={{ delay: 0.1 + index * 0.1, duration: 0.3 }}
                 />
                 <motion.h3
                   className={`text-2xl font-semibold mt-4 ${project.textColor}`}
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.8 + index * 0.1, duration: 0.5 }}
-                >
-                  {project.title}
+                  transition={{ delay: 0.1 + index * 0.1, duration: 0.3 }}
+                > <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${project.textColor} hover:underline`}
+              >
+                {project.title}
+              </a>
+                  {/* {project.title} */}
                 </motion.h3>
                 <motion.p
                   className={`mt-2 ${project.textColor} opacity-90`}
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1 + index * 0.1, duration: 0.5 }}
+                  transition={{ delay: 0.1 + index * 0.1, duration: 0.3 }}
                 >
                   {project.description}
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
+                  transition={{ delay: 0.1 + index * 0.1, duration: 0.3 }}
                   className="mt-4"
                 >
                   <Button 
@@ -156,6 +163,14 @@ export function ProjectSection() {
               </motion.div>
             ))}
           </motion.div>
+          <div> <a href="https://github.com/vijaykumarr1452/" target="_blank" rel="noopener noreferrer">
+      <Button variant='outline'
+        className="mt-10 mx-auto border-primary font-bold text-primary flex items-center hover:bg-primary hover:text-primary-foreground px-5 py-4 border rounded"
+        style={{ borderWidth: "1px" }}
+      >
+        Show More
+      </Button>
+    </a></div>
         </div>
       </motion.div>
 
@@ -191,7 +206,7 @@ export function ProjectSection() {
                     <a href={selectedProject.live} target="_blank" rel="noopener noreferrer">
                       <Button className="group bg-blue-600 text-white hover:bg-blue-500">
                         <FaExternalLinkAlt className="mr-2" />
-                        Live Demo
+                        Live 
                       </Button>
                     </a>
                   </div>

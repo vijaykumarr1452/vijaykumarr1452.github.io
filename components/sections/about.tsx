@@ -9,6 +9,10 @@ import Image from "next/image"
 
 const skills = [
   "React/Next.js",
+  "Java",
+  "Python",
+  "SQL",
+  "AWS",
   "TypeScript",
   "Node.js",
   "Tailwind CSS",
@@ -17,12 +21,12 @@ const skills = [
 ]
 
 const interests = [
-  { icon: "🚀", label: "Space Exploration" },
+  { icon: "🚀", label: "Astronomy" },
   { icon: "🎮", label: "Gaming" },
   { icon: "📚", label: "Reading" },
-  { icon: "🎨", label: "Digital Art" },
+  { icon: "🎨", label: "Cooking" },
 ]
-
+ 
 const floatingAnimation = {
   y: ["-17%", "17%"],
   transition: {
@@ -72,7 +76,7 @@ export function AboutSection() {
                 className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 2 }}
               />
             </motion.div>
             <motion.div
@@ -91,7 +95,7 @@ export function AboutSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
               <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">About Me</h2>
               <AnimatePresence mode="wait">
@@ -101,13 +105,30 @@ export function AboutSection() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.5 }}
                     className="text-muted-foreground"
                   >
-                    I am a passionate developer focused on creating beautiful and functional web experiences. 
-                    With expertise in modern web technologies, I bring ideas to life through clean code and 
-                    thoughtful design. My journey in tech started with a fascination for problem-solving and 
-                    has evolved into a career dedicated to crafting intuitive digital solutions.
+                   Hi,I’m <b>Vijay!</b> A software developer with a knack for solving problems and turning ideas into scalable solutions bringing ideas to life through clean code and thoughtful design. <br /> <br />
+                   
+                   With around 20 months of experience as a full-stack developer in a startup,I’ve worked on building robust <a href="https://samai.ai/"
+      style={{ color: "blue", textDecoration: "underline" }}
+    >FinTech SAAS</a> using Django, React.js, Java, Python and AWS. <br /> <br />
+                   
+                   I’m passionate about continuous learning,which is why I’m always diving into new technologies <a
+      href="https://github.com/vijaykumarr1452/"
+      style={{ color: "blue", textDecoration: "underline" }}
+    >ML & AI</a> published a <a href="https://sdbindex.com/Documents/index/00000697/00001-88443"  style={{ color: "blue", textDecoration: "underline" }}>Research Paper</a> and constantly refining my skills. <br /> <br />
+                   
+                   When I’m not coding, you’ll find me exploring startup culture, Planets & Astronomy and working on 
+                   <a
+      href="https://github.com/vijaykumarr1452/"
+      style={{ color: "blue", textDecoration: "underline" }}
+    > Side Projects</a>. 
+                   
+                   <br /> My <b>Goal</b>? To craft impactful software and grow alongside a dynamic team!.Let’s build something awesome together!
+                    
+                    
+                    thoughtful design. 
                   </motion.p>
                 ) : (
                   <motion.p
@@ -115,10 +136,10 @@ export function AboutSection() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.5 }}
                     className="text-muted-foreground"
                   >
-                    I am a passionate developer focused on creating beautiful and functional web experiences...
+                    My journey in tech started with a fascination for problem-solving and has evolved into a career dedicated to crafting intuitive digital solutions.
                   </motion.p>
                 )}
               </AnimatePresence>
@@ -136,7 +157,7 @@ export function AboutSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-4"
             >
               <h3 className="text-xl font-semibold">Core Skills</h3>
@@ -149,7 +170,7 @@ export function AboutSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
                     className={`px-3 py-1 rounded-full text-sm ${
                       activeSkill === skill 
                         ? "bg-primary text-primary-foreground" 
@@ -170,7 +191,7 @@ export function AboutSection() {
                     transition={{ duration: 0.2 }}
                     className="mt-2 p-2 bg-secondary/50 rounded-md text-sm"
                   >
-                    {`${activeSkill}: Click to see projects using this skill!`}
+                    {`${activeSkill}: Click to see projects!`}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -181,7 +202,7 @@ export function AboutSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-4"
             >
               <h3 className="text-xl font-semibold">Interests</h3>
@@ -193,7 +214,7 @@ export function AboutSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     whileHover={{ scale: 1.05 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center space-x-2 p-2 bg-secondary/30 rounded-md"
                   >
                     <span className="text-2xl">{interest.icon}</span>
@@ -210,22 +231,22 @@ export function AboutSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-primary-foreground">
-                <FaDownload className="mr-2 h-4 w-4" />
+              <Button variant='outline' className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <FaDownload className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <FaEnvelope className="mr-2 h-4 w-4" />
-                Contact Me
+                <FaEnvelope className="mr-2 h-5 w-5" />
+                Contact
               </Button>
               <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
-                <FaGithub className="h-5 w-5" />
+                <FaGithub className="h-6 w-6" />
               </Button>
               <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
-                <FaLinkedin className="h-5 w-5" />
+                <FaLinkedin className="h-6 w-6" />
               </Button>
             </motion.div>
           </div>

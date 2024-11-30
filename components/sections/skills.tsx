@@ -45,56 +45,77 @@ export  function SkillSection() {
       level: 90, 
       icon: "react-icon", 
       description: "Building interactive UIs with React",
-      projects: ["E-commerce Platform", "Social Media Dashboard", "Portfolio Website"]
+      projects: ["E-commerce Platform", "SAMAI", "Developer Portfolio"]
     },
     { 
       name: "Node.js", 
       level: 85, 
       icon: "nodejs-icon", 
       description: "Server-side JavaScript with Node.js",
-      projects: ["RESTful API", "ChatCord Chat Application", "Task Management System"]
+      projects: ["SAMAI", "ChatCord Chat Application", "Clinic Management System","E-Comm PLatform"]
     },
     { 
       name: "CSS", 
       level: 80, 
       icon: "css-icon", 
       description: "Styling web applications with CSS",
-      projects: ["Responsive Landing Page", "CSS Animation Library", "Custom UI Component Kit"]
+      projects: ["SAMAI", "Developer Portfolio", "Custom UI Component Kit", "Clinic Management System"]
     },
     { 
       name: "JavaScript", 
-      level: 95, 
+      level: 90, 
       icon: "js-icon", 
       description: "Core language for web development",
-      projects: ["Interactive Data Visualization", "Browser Extension", "JavaScript Game Engine"]
+      projects: ["SAMAI", "Developer Portfolio","Clinic Management System", "JavaScript Game Engine"]
     },
     { 
       name: "TypeScript", 
-      level: 90, 
+      level: 70, 
       icon: "ts-icon", 
       description: "Typed superset of JavaScript",
-      projects: ["Enterprise-level CRM", "TypeScript Library", "Angular Application"]
+      projects: ["Enterprise-level CRM", "Developer Portfolio", "Clinic Management System"]
     },
     { 
-      name: "GraphQL", 
-      level: 75, 
-      icon: "graphql-icon", 
-      description: "Efficient API queries with GraphQL",
-      projects: ["GraphQL API Gateway", "Real-time Data Subscription", "GraphQL Client Integration"]
+      name: "Machine Learning", 
+      level: 85, 
+      icon: "ml-icon", 
+      description: "It enables systems to learn and improve from experience using algorithms and statistical models to analyze data.",
+      projects: ["Customer Churn Analysis", "Cric Predictor ", "Optimisation of AA8081 Tribological properties"]
     },
     { 
       name: "Python", 
-      level: 70, 
+      level: 90, 
       icon: "python-icon", 
       description: "Versatile programming language",
-      projects: ["Data Analysis Tool", "Machine Learning Model", "Web Scraping Script"]
+      projects: ["SAMAI", "IPL Score Predictor", "Customer Churn Analysis"]
     },
     { 
       name: "Docker", 
-      level: 65, 
+      level: 75, 
       icon: "docker-icon", 
       description: "Containerization for applications",
-      projects: ["Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
+      projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
+    },
+    { 
+      name: "AWS", 
+      level: 85, 
+      icon: "aws-icon", 
+      description: "Containerization for applications",
+      projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
+    },
+    { 
+      name: "DSA", 
+      level: 70, 
+      icon: "dsa-icon", 
+      description: "Containerization for applications",
+      projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
+    },
+    { 
+      name: "SQL", 
+      level: 80, 
+      icon: "sql-icon", 
+      description: "Containerization for applications",
+      projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
     },
   ]
 
@@ -108,13 +129,15 @@ export  function SkillSection() {
 
   const getSkillEmoji = (skillName: string) => {
     const emojiMap: { [key: string]: string } = {
-      "React": "⚛️",
-      "Node.js": "🟢",
-      "CSS": "🎨",
-      "JavaScript": "🟨",
-      "TypeScript": "🔷",
-      "GraphQL": "🔺",
+      "React": "⚛",
       "Python": "🐍",
+      "JavaScript": "🟨",
+      "Machine Learning": "👨🏻‍💻",
+      "AWS":"🌐",
+      "SQL":"⛃",
+      "DSA": "🎯",
+      "CSS": "🎨",
+      "TypeScript": "🟠",
       "Docker": "🐳"
     };
     return emojiMap[skillName] || "🔧";
@@ -147,12 +170,12 @@ export  function SkillSection() {
           >
             Here is a collection of my skills with their proficiency levels.
           </motion.p>
-          <Button 
+          {/* <Button 
             onClick={() => setShowLevel(!showLevel)} 
             className="mb-8 transition-colors duration-300 hover:bg-purple-600"
           >
             {showLevel ? "Hide Levels" : "Show Levels"}
-          </Button>
+          </Button> */}
         </div>
 
         <motion.div
@@ -226,7 +249,7 @@ export  function SkillSection() {
                       >
                         <X className="h-4 w-4" />
                       </Button>
-                      <h4 className="text-white font-semibold mb-2 text-2xl">
+                      <h4 className="text-white font-semibold mb-1 text-1xl">
                         {skill.name} {getSkillEmoji(skill.name)}
                       </h4>
                       <p className="text-white mb-4 text-lg" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
@@ -246,7 +269,7 @@ export  function SkillSection() {
                           />
                         </motion.div>
                       )}
-                      {showLevel && (
+                      {/* {showLevel && (
                         <motion.p
                           className="text-white mb-4 font-semibold text-xl"
                           initial={{ opacity: 0 }}
@@ -263,7 +286,7 @@ export  function SkillSection() {
                           </motion.span>
                           🚀
                         </motion.p>
-                      )}
+                      )} */}
                       <h5 className="text-white font-semibold mb-2 text-xl">Related Projects 📂:</h5>
                       <ul className="list-none text-white">
                         {skill.projects.map((project, index) => (
@@ -295,7 +318,7 @@ export  function SkillSection() {
                         animate={{ opacity: 1, rotate: 0 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
                       >
-                        <img src={`/placeholder.svg?height=48&width=48`} alt={skill.name} className="w-12 h-12" />
+                        <img src={`/placeholder.svg?height=40&width=40`} alt={skill.name} className="w-8 h-8" />
                       </motion.div>
                       <motion.h3
                         className="text-2xl font-semibold text-white mb-2"

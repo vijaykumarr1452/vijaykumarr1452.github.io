@@ -96,7 +96,7 @@ export function HeroSection() {
                   <div key={index} className="relative group">
                     <img
                       src="https://tinyurl.com/bgimagevj6"
-                      alt={`Contributor ${index + 1}`}
+                      alt={`Vijay R`}
                       width={80}
                       height={80}
                       className="rounded-full border-2 border-primary transition-all duration-3 hover:border-4"
