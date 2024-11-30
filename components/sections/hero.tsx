@@ -22,7 +22,6 @@ export function HeroSection() {
         alt="BG_IMG"
         // fill
         className="object-cover"
-        priority
         style={{
         maxWidth: "95%",
         // flexWrap:Cell,
