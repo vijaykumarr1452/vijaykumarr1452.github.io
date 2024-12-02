@@ -8,14 +8,15 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Menu, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/#about" },
-  { name: "Projects", path: "/#projects" },
-  { name: "Skills", path: "/#skills" },
-  { name: "Experience", path: "/#experiences" },
-  { name: "Contact", path: "/#contact" },
+  { name: "About", path: "#about" },
+  { name: "Projects", path: "#projects" },
+  { name: "Skills", path: "#skills" },
+  { name: "Experience", path: "#experiences" },
+  { name: "Contact", path: "#contact" },
 ]
 
 export function Navbar() {
@@ -55,10 +56,12 @@ export function Navbar() {
             href="/"
             className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity"
           >
-             <img
+             <Image
           src="https://tinyurl.com/vjlogo1"
           alt="Logo"
-          style={{ width: '60px', height: '60px' }}
+          width={60}
+          height={60}
+          // style={{ }}
           />
 
           </Link>
@@ -94,9 +97,9 @@ export function Navbar() {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "dark" ? (
-                <Sun className="h-5 w-5" />
+                <Sun className="h-6 w-6" />
               ) : (
-                <Moon className="h-5 w-5" />
+                <Moon className="h-6 w-6" />
               )}
             </Button>
             <Button

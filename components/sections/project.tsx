@@ -34,12 +34,12 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Virtual Reality Fitness App",
+    title: "Developer Portflio",
     description: "A VR application that gamifies workout routines, making fitness fun and engaging for users.",
-    image: "https://tinyurl.com/25ydsheu",
+    image: "https://tinyurl.com/vjweb",
     color: "from-green-500 to-yellow-500",
     textColor: "text-green-100",
-    details: "Users can choose from various virtual environments and workout types. The app tracks body movements using VR controllers and provides real-time feedback on form and performance.",
+    details: "An interactive",
     technologies: ["Unity", "C#", "Oculus SDK", "Firebase"],
     github: "https://github.com/vijaykumarr1452/Developer-Portfolio-Website",
     live: "https://vr-fitness.example.com"

@@ -8,6 +8,7 @@ import Link from "next/link"
 import { Footer } from "@/components/footer"
 import React from "react"
 import { Cell } from "recharts"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -17,14 +18,17 @@ export function HeroSection() {
       transition={{ duration: 0.1 }}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-     <div><img
+     <div><Image
         src="https://tinyurl.com/bgimagevj"
         alt="BG_IMG"
-        // fill
         className="object-cover"
+        width={800}
+        height={800}
+        // fill
         style={{
-        maxWidth: "95%",
-        // flexWrap:Cell,
+        // maxWidth: "100%",
+        
+        // //flexWrap:Cell,
         // height: "auto"
       }} />
       </div>
@@ -93,7 +97,7 @@ export function HeroSection() {
 <div className="flex justify-center space-x-4">
                 {[0, 1, 2].map((index) => (
                   <div key={index} className="relative group">
-                    <img
+                    <Image
                       src="https://tinyurl.com/bgimagevj6"
                       alt={`Vijay R`}
                       width={80}

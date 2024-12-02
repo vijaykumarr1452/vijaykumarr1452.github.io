@@ -22,9 +22,9 @@ type Experience = {
 
 const experiences = [
   {
-    role: "Frontend Developer",
+    role: "Software Engineer ",
     company: "Tech Solutions",
-    duration: "Jan 2022 - Present",
+    duration: "Jan 2024 - Present",
     description: "Developing cutting-edge web applications using Next.js, React, and Tailwind CSS.",
     technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     companyLogo: "/placeholder.svg?height=48&width=48",
