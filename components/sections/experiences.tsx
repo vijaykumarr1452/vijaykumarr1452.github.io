@@ -87,8 +87,8 @@ export function ExperienceSection() {
   const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
 
   return (
-    (<section id="experiences" className="py-24 bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
-      <div className="container px-4 mx-auto">
+    (<section id="experiences" className="py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
+      <div className="container px-4 mx-auto py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -102,7 +102,7 @@ export function ExperienceSection() {
           >
             <h2 className="text-4xl font-bold mb-4 text-white">Work Experience</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              A selection of my recent professional roles where I've grown my skills and worked on exciting projects.
+              A selection of my recent professional roles where I have grown my skills and worked on exciting projects.
             </p>
           </motion.div>
 

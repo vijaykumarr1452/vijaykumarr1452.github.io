@@ -49,7 +49,7 @@ export function HeroSection() {
             transition={{ duration: 1.2 }}
             className="text-4xl md:text-6xl font-bold mb-7"
           >
-            I'm a 
+            I' m a 
           </motion.h1>
           <motion.h2
             initial={{ scale: 0.3, opacity: 0 }}

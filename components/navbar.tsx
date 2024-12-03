@@ -11,7 +11,7 @@ import { useTheme } from "next-themes"
 import Image from "next/image"
 
 const navItems = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "#" },
   { name: "About", path: "#about" },
   { name: "Projects", path: "#projects" },
   { name: "Skills", path: "#skills" },
@@ -44,11 +44,9 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={cn(
-        "fixed top-0 z-50 w-full transition-all duration-300",
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      )}
+        "bg-background/50 backdrop-blur-md shadow-sm fixed top-0 z-50 w-full transition-all duration-300",
+        
+     )}
     >
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
@@ -69,17 +67,17 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
-                key={item.path}
+                key={item.name}
                 href={item.path}
                 className={cn(
-                  "relative text-sm font-medium transition-colors hover:text-primary",
+                  "relative text-xl-2 font-medium transition-colors hover:text-primary",
                   pathname === item.path
                     ? "text-primary"
                     : "text-muted-foreground"
                 )}
               >
                 {item.name}
-                {pathname === item.path && (
+                {pathname === item.name && (
                   <motion.div
                     layoutId="navbar-indicator"
                     className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
@@ -89,21 +87,22 @@ export function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-5">
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
-              aria-label="Toggle theme"
+              aria-label={theme ? "Switch to light mode" :"Switch to dark mode"}
+                
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "dark" ? (
-                <Sun className="h-6 w-6" />
+                <Sun className="h-8 w-8" />
               ) : (
-                <Moon className="h-6 w-6" />
+                <Moon className="h-8 w-8" />
               )}
             </Button>
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -114,7 +114,7 @@ export function ContactSection() {
                       className={`mt-1 ${errors.name ? "border-destructive" : ""}`}
                     />
                     {errors.name && <p className="mt-1 text-sm text-destructive">{errors.name}</p>}
-                  </motion.div>
+                  </motion.div>terms_active
 
                   <motion.div variants={childVariants}>
                     <Label htmlFor="email" className="text-primary">Email</Label>

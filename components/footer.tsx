@@ -59,11 +59,11 @@ export function Footer() {
               <Image
                 src="https://tinyurl.com/faviconvj"
                 alt="Vijay R"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 className="rounded-full border-4 border-primary shadow-lg transition-all duration-300 hover:scale-100 group-hover:shadow-primary/50"
                 style={{
-                  transform: `rotate(${imageRotation}deg)`,
+                  // transform: `rotate(${imageRotation}deg)`,
                   maxWidth: "100%",
                   height: "auto"
                 }} />
