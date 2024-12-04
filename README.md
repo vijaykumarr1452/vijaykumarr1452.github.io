@@ -1,5 +1,5 @@
 
-# 🚀 Interactive & Animated Developer Portfolio**
+# 🚀 Interactive Developer Portfolio**
 
 Welcome to my Developer Portfolio, an interactive, and animation-rich developer portfolio built with the latest technologies: **Next.js**, **Tailwind CSS**, **Framer Motion**, **ShadCN UI**, and **TypeScript**. This portfolio is designed to showcase your skills, projects, and experience with smooth animations, dynamic hover effects, and a modern, responsive design. It's built to impress and provide an engaging user experience!
 
@@ -62,20 +62,6 @@ Your portfolio will be available at [http://localhost:3000](http://localhost:300
 
 ---
 
-## 👥 **Contributing**
-
-We welcome contributions! Please follow the steps below to contribute to this project:
-
-1. **Fork the repository** and clone it to your local machine.
-2. **Create a new branch** for your feature or bug fix.
-3. **Make your changes** and test them locally.
-4. **Commit your changes** with a descriptive message.
-5. **Push to your fork** and open a **pull request** to the main repository.
-
-For more detailed instructions, check out the [CONTRIBUTING.md](CONTRIBUTING.md) guide. 📑
-
----
-
 ## 📜 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -87,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or suggestions, feel free to reach out to me:
 
 - Email: [vijaykumarit45@gmail.com](mailto:vijaykumarit45@gmail.com)
-- GitHub: [Profile](https://github.com/vijaykumarr1452)
+- GitHub: [Github](https://github.com/vijaykumarr1452)
 - Linkedin: [Linkedin](https://www.linkedin.com/in/rachuri-vijaykumar/)
 - Twitter: [Twitter](https://x.com/vijay_viju1)
 
@@ -95,7 +81,7 @@ Let me know if you'd like me to refine this further or add any specific features
 
 ---
 
-### ⭐ **Thank you for checking out my portfolio! Feel free to fork, clone, and customize!** 🌟
+### ⭐ **Thank you for checking out my portfolio! Feel free to reach out**
 
 
 

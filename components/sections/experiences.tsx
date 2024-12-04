@@ -22,39 +22,39 @@ type Experience = {
 
 const experiences = [
   {
-    role: "Software Engineer ",
-    company: "Tech Solutions",
-    duration: "Jan 2024 - Present",
-    description: "Developing cutting-edge web applications using Next.js, React, and Tailwind CSS.",
-    technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    role: "Software Engineer 1 ",
+    company: "Control FHR Services Pvt Ltd.",
+    duration: "Nov 2023 - Present",
+    description: "Enabled efficient tracking and management of client tax information {samai.ai}, ensuring compliance with regulatory requirements.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
+    technologies: ["Python","React","Django","AWS","UI/UX","Gitlab","Postman"],
     companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-blue-400 to-blue-600",
   },
   {
-    role: "UI/UX Designer",
-    company: "Creative Agency",
-    duration: "Jun 2020 - Dec 2021",
-    description: "Designing interactive and user-friendly interfaces for web and mobile apps.",
-    technologies: ["Figma", "Adobe XD", "UI/UX Design"],
+    role: "Product Intern",
+    company: "Adobe",
+    duration: "Mar 2023 - July 2023",
+    description: "Collaborated with cross-functional and enhanced features for Adobe's suite,built POC for a feature in Adobe suite.Analyzed product usage historical data & visualised the data.",
+    technologies: ["UI/UX Design",],
     companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-purple-400 to-purple-600",
   },
   {
-    role: "Full Stack Developer",
-    company: "Web Innovators",
-    duration: "Mar 2019 - May 2020",
-    description: "Worked on both front-end and back-end development of an e-commerce platform using Node.js, Express, and React.",
-    technologies: ["Node.js", "Express", "React", "MongoDB"],
+    role: "ML Engineer",
+    company: "Maths AI",
+    duration: "May 2023",
+    description: "Worked on auto-score feature model which impacted the accuracy and precision metrics to 96 which enabled more accurate data analysis of student scripts.",
+    technologies: ["Neural Networks", "Machine Learning","AWS", "ANN", "CNN","Data Analysis"],
     companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-green-400 to-green-600",
   },
   {
-    role: "Backend Developer",
-    company: "DataTech Solutions",
-    duration: "Jan 2018 - Feb 2019",
-    description: "Focused on developing and optimizing APIs and database architecture using Java and PostgreSQL.",
-    technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
-    companyLogo: "/placeholder.svg?height=48&width=48",
+    role: "Teaching Assistant",
+    company: "Ace Academy",
+    duration: "Nov 2023 - Feb 2024",
+    description: "Helped 8 fellow peers in GATE CS & GATE Data Science 2024 and achieved 952 rank(GATE DA) & 1387 rank(GATE CS). ",
+    technologies: [],
+    companyLogo: "",
     color: "from-red-400 to-red-600",
   },
 ]
@@ -107,7 +107,7 @@ export function ExperienceSection() {
           </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-            {experiences.map((experience, index) => (
+            {experiences.map((experience,index) => (
               <motion.div
                 key={experience.company}
                 variants={cardVariants}
