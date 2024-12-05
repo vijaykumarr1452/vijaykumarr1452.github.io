@@ -54,7 +54,7 @@ export function Footer() {
     (<footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-2 py-2">
         <div className="flex flex-col items-center justify-between space-y-2 md:flex-row md:space-y-0">
-          <div className="text-center md:space-x-4 md:space-y-2 flex flex-wrap items-center md:items-start">
+          <div className="md:space-x-2 md:space-y-5 flex flex-wrap items-center md:items-start">
             <div className="mb-4 relative group">
               <Image
                 src="https://tinyurl.com/faviconvj"
@@ -71,7 +71,7 @@ export function Footer() {
               <div className="absolute -inset-2 rounded-full opacity-20 animate-ping bg-gradient-to-r from-primary via-secondary to-primary"></div>
             </div>
             {[ 
-              "© 2024 Vijay Rachuri. All rights reserved.",
+              "© 2024 Vijay Rachuri. Made with 🧡 .",
               // "Created by VIJAY RACHURI",
               // "Phone: +91 8186916414",
               // "Email: vijaykumarit45@gmail.com"
@@ -109,7 +109,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="relative"
                   >
-                    <social.icon className={`h-4.5 w-4.5 transition-all duration-300 ${social.color}`} />
+                    <social.icon className={`h-6 w-6 transition-all duration-300 ${social.color}`} />
                     <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-90 transition-opacity duration-300 animate-ping bg-current"></span>
                     <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-300 bg-current blur-sm"></span>
                   </a>
