@@ -68,11 +68,11 @@ export function HeroSection() {
           >
             <TypeAnimation
               sequence={[
-                "Building beautiful web experiences",
-                1000,
                 "Crafting intuitive interfaces",
                 1000,
-                "Machine Learning Enthusiast",
+                "Building beautiful web experiences",
+                1000,
+                "& Machine Learning Maven !!",
                 1000,
               ]}
               wrapper="span"

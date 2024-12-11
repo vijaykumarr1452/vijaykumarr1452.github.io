@@ -87,8 +87,8 @@ export function ExperienceSection() {
   const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
 
   return (
-    (<section id="experiences" className="py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
-      <div className="container px-4 mx-auto py-24 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
+    (<section id="experiences" className="py-16 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
+      <div className="container px-4 mx-auto py-16 bg-gradient-to-br from-background to-secondary/30 overflow-hidden">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -96,6 +96,7 @@ export function ExperienceSection() {
           variants={containerVariants}
           className="flex flex-col items-center"
         >
+          {/* ------------------------------------
           <motion.div
             variants={cardVariants}
             className="text-center mb-12"
@@ -105,6 +106,33 @@ export function ExperienceSection() {
               A selection of my recent professional roles where I have grown my skills and worked on exciting projects.
             </p>
           </motion.div>
+----------------------------------- */}
+
+<div className="text-center mb-8">
+          <motion.h2
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl md:text-5xl font-bold mb-6 text-primary"
+          >
+            Work Experience
+          </motion.h2>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="text-lg md:text-xl text-muted-foreground mb-8"
+          >
+            Recent professional roles where I have grown my skills and worked on exciting projects.
+          </motion.p>
+          {/* <Button 
+            onClick={() => setShowLevel(!showLevel)} 
+            className="mb-8 transition-colors duration-300 hover:bg-purple-600"
+          >
+            {showLevel ? "Hide Levels" : "Show Levels"}
+          </Button> */}
+        </div>
+
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
             {experiences.map((experience,index) => (

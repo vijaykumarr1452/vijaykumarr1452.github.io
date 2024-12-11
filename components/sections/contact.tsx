@@ -79,6 +79,26 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-24 bg-gradient-to-br from-primary/20 to-secondary/20">
       <div className="container mx-auto px-4">
+      <div className="text-center mb-8">
+          <motion.h2
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl md:text-5xl font-bold mb-6 text-primary"
+          >
+            Contact
+          </motion.h2>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="text-lg md:text-xl text-muted-foreground mb-8"
+          >
+            I’m always excited to connect! Whether you’re looking to collaborate on a potential project, share ideas, or just say hello, feel free to drop me an email—I’ll do my best to respond promptly. You can also find me on<a className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="https://linkedin.com/in/rachuri-vijaykumar/" >Linkedin!</a>
+          </motion.p>
+
+          </div>
+
         <motion.div
           className="max-w-2xl mx-auto bg-background rounded-lg shadow-xl overflow-hidden"
           initial="hidden"
@@ -87,7 +107,7 @@ export function ContactSection() {
         >
           <div className="p-8 sm:p-12">
             <motion.h2 className="text-3xl font-bold text-center mb-8 text-primary" variants={childVariants}>
-              Get in Touch
+              
             </motion.h2>
 
             {isSubmitted ? (
@@ -165,6 +185,7 @@ export function ContactSection() {
                 </motion.div>
               </form>
             )}
+           
           </div>
         </motion.div>
       </div>

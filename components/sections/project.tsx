@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { FaChevronRight, FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import Image from "next/image"
 
 type Project = {
   id: number;
@@ -63,7 +64,7 @@ export function ProjectSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="py-24 bg-gradient-to-br from-background to-secondary/30 transition-colors duration-300 overflow-hidden">
+    <section id="projects" className="bg-gradient-to-br from-background to-secondary/30 transition-colors duration-300 overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -76,7 +77,7 @@ export function ProjectSection() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-secondary/20 to-background animate-pulse" />
         </div>
 
-        <div className="container mx-auto px-4 z-10">
+        <div className="py-24 container mx-auto px-4 z-10">
           <div className="text-center mb-12">
             <motion.h2
               initial={{ scale: 0.5, opacity: 0 }}
@@ -182,7 +183,7 @@ export function ProjectSection() {
               <DialogHeader>
                 <DialogTitle>{selectedProject.title}</DialogTitle>
                 <DialogDescription>
-                  <img 
+                  <Image 
                     src={selectedProject.image} 
                     alt={selectedProject.title} 
                     className="w-full h-48 object-cover rounded-lg mb-4"
@@ -216,6 +217,13 @@ export function ProjectSection() {
           </Dialog>
         )}
       </AnimatePresence>
+      <section id="proj"className="mx-auto py-40 items-center justify-center">
+      <div className="font-bold text-primary text-center ">  <h1 className="mx-auto text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Have A Project In Your Mind ?</h1><br />
+    <a href="https://github.com/vijaykumarr1452/"><Button variant={"ghost"} className="mx-auto w-30 h-30 text-2xl group bg-blue-600 text-white hover:bg-blue-500 hover:bg-primary hover:text-primary-foreground px-5 py-4 border-rounded"> Project portfolio</Button></a><br/><br />
+    <a href="#contact" ><Button variant={"outline"} className="mx-auto w-30 h-30 text-2xl group bg-blue-600 text-white hover:bg-blue-500 hover:bg-primary hover:text-primary-foreground px-5 py-4 border-rounded"> Hire Me!</Button></a></div>
+  
+    </section>
+
     </section>
   )
 }

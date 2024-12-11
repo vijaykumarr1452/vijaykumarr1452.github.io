@@ -234,20 +234,24 @@ export function AboutSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant='outline' className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <a href="https://drive.google.com/file/d/1f2q8l0HA562zrmkmn0QOABxXyh5ema_O/view?usp=sharing"><Button variant='outline' className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <FaDownload className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              </a>
+              <a href="#contact"><Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <FaEnvelope className="mr-2 h-5 w-5" />
                 Contact
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
+              </a>
+              <a href="https://github.com/vijaykumarr1452/"><Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
                 <FaGithub className="h-6 w-6" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
+              </a>
+              <a href="https://linkedin.com/in/rachuri-vijaykumar/"><Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
                 <FaLinkedin className="h-6 w-6" />
               </Button>
+              </a>
             </motion.div>
           </div>
         </motion.div>

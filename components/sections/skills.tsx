@@ -146,21 +146,21 @@ export  function SkillSection() {
   return (
     <>
       {scrollbarStyles}
-    <section id="skills" className="py-24 bg-gradient-to-br from-background to-secondary overflow-hidden">
+    <section id="skills" className="py-16 bg-gradient-to-br from-background to-secondary overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4"
       >
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <motion.h2
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold mb-6 text-primary"
+            className="text-xl md:text-5xl font-bold mb-6 text-primary"
           >
-            My Skills
+            Skills
           </motion.h2>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -168,7 +168,7 @@ export  function SkillSection() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-8"
           >
-            Here is a collection of my skills with their proficiency levels.
+            Here is a collection of my skills with projects.
           </motion.p>
           {/* <Button 
             onClick={() => setShowLevel(!showLevel)} 
