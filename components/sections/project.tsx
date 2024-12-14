@@ -36,14 +36,14 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Developer Portflio",
-    description: "A VR application that gamifies workout routines, making fitness fun and engaging for users.",
+    description: "an interactive, and animation-rich developer portfolio built with the latest technologies: Next.js, Tailwind CSS, Framer Motion, ShadCN UI, and TypeScript.",
     image: "https://tinyurl.com/vjweb",
     color: "from-green-500 to-yellow-500",
     textColor: "text-green-100",
     details: "An interactive",
     technologies: ["Unity", "C#", "Oculus SDK", "Firebase"],
     github: "https://github.com/vijaykumarr1452/Developer-Portfolio-Website",
-    live: "https://vr-fitness.example.com"
+    live: "https://vijaykumarr1452.github.io/"
   },
   {
     id: 3,
