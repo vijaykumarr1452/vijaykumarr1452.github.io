@@ -33,7 +33,7 @@ const experiences = [
   {
     role: "Software Engineer Trainee",
     company: "GCMR Associates",
-    duration: "Jan 2023 - July 2023",
+    duration: "Dec 2022 - July 2023",
     description: "Collaborated with cross-functional and enhanced features for Adobe's suite,built POC for a feature in Adobe suite.Analyzed product usage historical data & visualised the data.",
     technologies: ["UI/UX Design",],
     // companyLogo: "/placeholder.svg?height=48&width=48",
