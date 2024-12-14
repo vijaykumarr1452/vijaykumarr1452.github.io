@@ -15,7 +15,7 @@ type Experience = {
   duration: string;
   description: string;
   technologies: string[];
-  companyLogo: string;
+  // companyLogo: string;
   color: string;
 };
 
@@ -24,19 +24,19 @@ const experiences = [
   {
     role: "Software Engineer 1 ",
     company: "Control FHR Services Pvt Ltd.",
-    duration: "Nov 2023 - Present",
-    description: "Enabled efficient tracking and management of client tax information {samai.ai}, ensuring compliance with regulatory requirements.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
+    duration: "OCT 2023 - Present",
+    description: "Enabled efficient tracking and management of client tax information , ensuring compliance with regulatory requirements.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
     technologies: ["Python","React","Django","AWS","UI/UX","Gitlab","Postman"],
-    companyLogo: "/placeholder.svg?height=48&width=48",
+    // companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-blue-400 to-blue-600",
   },
   {
-    role: "Product Intern",
-    company: "Adobe",
-    duration: "Mar 2023 - July 2023",
+    role: "Software Engineer Trainee",
+    company: "GCMR Associates",
+    duration: "Jan 2023 - July 2023",
     description: "Collaborated with cross-functional and enhanced features for Adobe's suite,built POC for a feature in Adobe suite.Analyzed product usage historical data & visualised the data.",
     technologies: ["UI/UX Design",],
-    companyLogo: "/placeholder.svg?height=48&width=48",
+    // companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-purple-400 to-purple-600",
   },
   {
@@ -45,18 +45,18 @@ const experiences = [
     duration: "May 2023",
     description: "Worked on auto-score feature model which impacted the accuracy and precision metrics to 96 which enabled more accurate data analysis of student scripts.",
     technologies: ["Neural Networks", "Machine Learning","AWS", "ANN", "CNN","Data Analysis"],
-    companyLogo: "/placeholder.svg?height=48&width=48",
+    // companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-green-400 to-green-600",
   },
-  {
-    role: "Teaching Assistant",
-    company: "Ace Academy",
-    duration: "Nov 2023 - Feb 2024",
-    description: "Helped 8 fellow peers in GATE CS & GATE Data Science 2024 and achieved 952 rank(GATE DA) & 1387 rank(GATE CS). ",
-    technologies: [],
-    companyLogo: "",
-    color: "from-red-400 to-red-600",
-  },
+  // {
+  //   role: "Teaching Assistant",
+  //   company: "Ace Academy",
+  //   duration: "Nov 2023 - Feb 2024",
+  //   description: "Helped 8 fellow peers in GATE CS & GATE Data Science 2024 and achieved 952 rank(GATE DA) & 1387 rank(GATE CS). ",
+  //   technologies: [],
+  //   companyLogo: "",
+  //   color: "from-red-400 to-red-600",
+  // },
 ]
 
 const containerVariants = {
@@ -123,7 +123,7 @@ export function ExperienceSection() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-8"
           >
-            Recent professional roles where I have grown my skills and worked on exciting projects.
+            Recent professional roles where I have grown my skills and worked on many exciting projects.
           </motion.p>
           {/* <Button 
             onClick={() => setShowLevel(!showLevel)} 
@@ -149,14 +149,14 @@ export function ExperienceSection() {
                   <div>
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="w-12 h-12 relative rounded-full overflow-hidden bg-white p-1">
-                        <Image
+                        {/* <Image
                           src={experience.companyLogo}
                           alt={experience.company}
                           fill
                           sizes="100vw"
                           style={{
                             objectFit: "cover"
-                          }} />
+                          }} /> */}
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-white">{experience.role}</h3>
