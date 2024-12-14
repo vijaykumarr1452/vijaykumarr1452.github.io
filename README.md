@@ -40,7 +40,7 @@ git clone https://github.com/vijaykumarr1452/portfolio-website.git
 
 ### 2. **Install dependencies**:
 ```bash
-cd folio-motion
+cd portolio website
 npm install
 ```
 
