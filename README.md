@@ -1,5 +1,5 @@
 
-# 🚀 Interactive Developer Portfolio**
+# 🚀 Interactive Developer Portfolio-[Live](https://vijaykumarr1452.github.io/)
 
 Welcome to my Developer Portfolio, an interactive, and animation-rich developer portfolio built with the latest technologies: **Next.js**, **Tailwind CSS**, **Framer Motion**, **ShadCN UI**, and **TypeScript**. This portfolio is designed to showcase your skills, projects, and experience with smooth animations, dynamic hover effects, and a modern, responsive design. It's built to impress and provide an engaging user experience!
 
