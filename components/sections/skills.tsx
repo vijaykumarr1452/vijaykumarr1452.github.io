@@ -252,7 +252,7 @@ export  function SkillSection() {
                         <X className="h-4 w-4" />
                       </Button>
                       <h4 className="text-white font-semibold mb-1 text-1xl">
-                        {skill.name} {getSkillEmoji(skillName)}
+                        {skill.name} {getSkillEmoji(skill.name)}
                       </h4>
                       <p className="text-white mb-4 text-lg" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
                         {skill.description}
