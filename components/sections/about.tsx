@@ -234,7 +234,7 @@ export function AboutSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-              <a href="https://drive.google.com/file/d/1f2q8l0HA562zrmkmn0QOABxXyh5ema_O/view?usp=sharing"><Button variant='outline' className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <a href="https://tinyurl.com/devres0"><Button variant='outline' className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <FaDownload className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
