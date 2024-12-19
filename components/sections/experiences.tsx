@@ -23,7 +23,7 @@ type Experience = {
 const experiences = [
   {
     role: "Software Engineer 1 ",
-    company: "Control FHR Services Pvt Ltd.",
+    company: "Control F",
     duration: "OCT 2023 - Present",
     description: "Enabled efficient tracking and management of client tax information , ensuring compliance with regulatory requirements.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
     technologies: ["Python","React","Django","AWS","UI/UX","Gitlab","Postman"],
@@ -31,13 +31,14 @@ const experiences = [
     color: "from-blue-400 to-blue-600",
   },
   {
-    // role: "Data Analyst",
-   //  company: "GCMR Associates",
-   // duration: "Dec 2022 - July 2023",
-    // description: "Collaborated with cross-functional and enhanced features for Adobe's suite,built POC for a feature in Adobe suite.Analyzed product usage historical data & visualised the data.",
-   // technologies: ["UI/UX Design",],
+    role: "Data Analyst",
+     company: "Freelance(GCMR Assoc)",
+   duration: "Dec 2022 - July 2023",
+    description: "https://tinyurl.com/1clinic| 1.Developed a comprehensive Clinic Management System and Record Management System.
+    2.Leveraging AI to optimise learning efficiency by 72% enabling seamless integration and UI optimisation ",
+   // technologies: ["Python","JS","UI/UX Design","React","Node","Neural Networks","AWS","Debugging"],
     // companyLogo: "/placeholder.svg?height=48&width=48",
-   // color: "from-purple-400 to-purple-600",
+   color: "from-purple-400 to-purple-600",
   },
   {
     role: "ML Engineer Trainee",
