@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, ChevronDown, X } from 'lucide-react'
 import { GlobalStyles } from '@mui/material';
+import Image from "next/image"
 
 const scrollbarStyles = (
   <GlobalStyles
@@ -124,7 +125,8 @@ export  function SkillSection() {
   }
 
   const showMoreSkills = () => {
-    setVisibleSkills(prevVisible => Math.min(prevVisible + 3, skills.length))
+    setVisibleSkills(prevVisible => Math.min(prevVisible + 6, skills.length))
+
   }
 
   const getSkillEmoji = (skillName: string) => {
@@ -250,7 +252,7 @@ export  function SkillSection() {
                         <X className="h-4 w-4" />
                       </Button>
                       <h4 className="text-white font-semibold mb-1 text-1xl">
-                        {skill.name} {getSkillEmoji(skill.name)}
+                        {skill.name} {getSkillEmoji(skillName)}
                       </h4>
                       <p className="text-white mb-4 text-lg" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
                         {skill.description}
@@ -318,7 +320,7 @@ export  function SkillSection() {
                         animate={{ opacity: 1, rotate: 0 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
                       >
-                        <img src={`/placeholder.svg?height=40&width=40`} alt={skill.name} className="w-8 h-8" />
+                      <div className="w-2 h-2" >{skill.icon} </div>
                       </motion.div>
                       <motion.h3
                         className="text-2xl font-semibold text-white mb-2"
