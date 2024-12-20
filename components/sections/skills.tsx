@@ -30,7 +30,7 @@ const scrollbarStyles = (
 interface Skill {
   name: string
   level: number
-  icon: string
+  // icon: string
   description: string
   projects: string[]
 }
@@ -44,77 +44,77 @@ export  function SkillSection() {
     { 
       name: "React", 
       level: 90, 
-      icon: "react-icon", 
+      // icon: "react-icon", 
       description: "Building interactive UIs with React",
       projects: ["E-commerce Platform", "SAMAI", "Developer Portfolio"]
     },
     { 
       name: "Node.js", 
       level: 85, 
-      icon: "nodejs-icon", 
+      // icon: "nodejs-icon", 
       description: "Server-side JavaScript with Node.js",
       projects: ["SAMAI", "ChatCord Chat Application", "Clinic Management System","E-Comm PLatform"]
     },
     { 
       name: "CSS", 
       level: 80, 
-      icon: "css-icon", 
+      // icon: "css-icon", 
       description: "Styling web applications with CSS",
       projects: ["SAMAI", "Developer Portfolio", "Custom UI Component Kit", "Clinic Management System"]
     },
     { 
       name: "JavaScript", 
       level: 90, 
-      icon: "js-icon", 
+      // icon: "js-icon", 
       description: "Core language for web development",
       projects: ["SAMAI", "Developer Portfolio","Clinic Management System", "JavaScript Game Engine"]
     },
     { 
       name: "TypeScript", 
       level: 70, 
-      icon: "ts-icon", 
+      // icon: "ts-icon", 
       description: "Typed superset of JavaScript",
       projects: ["Enterprise-level CRM", "Developer Portfolio", "Clinic Management System"]
     },
     { 
       name: "Machine Learning", 
       level: 85, 
-      icon: "ml-icon", 
+      // icon: "ml-icon", 
       description: "It enables systems to learn and improve from experience using algorithms and statistical models to analyze data.",
       projects: ["Customer Churn Analysis", "Cric Predictor ", "Optimisation of AA8081 Tribological properties"]
     },
     { 
       name: "Python", 
       level: 90, 
-      icon: "python-icon", 
+      // icon: "python-icon", 
       description: "Versatile programming language",
       projects: ["SAMAI", "IPL Score Predictor", "Customer Churn Analysis"]
     },
     { 
       name: "Docker", 
       level: 75, 
-      icon: "docker-icon", 
+      // icon: "docker-icon", 
       description: "Containerization for applications",
       projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
     },
     { 
       name: "AWS", 
       level: 85, 
-      icon: "aws-icon", 
+      // icon: "aws-icon", 
       description: "Containerization for applications",
       projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
     },
     { 
       name: "DSA", 
       level: 70, 
-      icon: "dsa-icon", 
+      // icon: "dsa-icon", 
       description: "Containerization for applications",
       projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
     },
     { 
       name: "SQL", 
       level: 80, 
-      icon: "sql-icon", 
+      // icon: "sql-icon", 
       description: "Containerization for applications",
       projects: ["SAMAI","Microservices Architecture", "CI/CD Pipeline", "Development Environment Setup"]
     },
@@ -129,21 +129,21 @@ export  function SkillSection() {
 
   }
 
-  const getSkillEmoji = (skillName: string) => {
-    const emojiMap: { [key: string]: string } = {
-      "React": "⚛",
-      "Python": "🐍",
-      "JavaScript": "🟨",
-      "Machine Learning": "👨🏻‍💻",
-      "AWS":"🌐",
-      "SQL":"⛃",
-      "DSA": "🎯",
-      "CSS": "🎨",
-      "TypeScript": "🟠",
-      "Docker": "🐳"
-    };
-    return emojiMap[skillName] || "🔧";
-  };
+  // const getSkillEmoji = (skillName: string) => {
+    // const emojiMap: { [key: string]: string } = {
+  //     "React": "⚛",
+  //     "Python": "🐍",
+  //     "JavaScript": "🟨",
+  //     "Machine Learning": "👨🏻‍💻",
+  //     "AWS":"🌐",
+  //     "SQL":"⛃",
+  //     "DSA": "🎯",
+  //     "CSS": "🎨",
+  //     "TypeScript": "🟠",
+  //     "Docker": "🐳"
+  //   };
+  //   return emojiMap[skillName] || "🔧";
+  // };
 
   return (
     <>
@@ -251,9 +251,9 @@ export  function SkillSection() {
                       >
                         <X className="h-4 w-4" />
                       </Button>
-                      <h4 className="text-white font-semibold mb-1 text-1xl">
+                      {/* <h4 className="text-white font-semibold mb-1 text-1xl">
                         {skill.name} {getSkillEmoji(skill.name)}
-                      </h4>
+                      </h4> */}
                       <p className="text-white mb-4 text-lg" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
                         {skill.description}
                       </p>
@@ -320,7 +320,7 @@ export  function SkillSection() {
                         animate={{ opacity: 1, rotate: 0 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
                       >
-                      <div className="w-2 h-2" >{skill.icon} </div>
+                      {/* <div className="w-2 h-2" >{skill.icon} </div> */}
                       </motion.div>
                       <motion.h3
                         className="text-2xl font-semibold text-white mb-2"
