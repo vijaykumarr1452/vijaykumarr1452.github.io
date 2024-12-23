@@ -31,8 +31,8 @@ const experiences = [
     color: "from-blue-400 to-blue-600",
   },
   {
-    role: "Data Analyst",
-    company: "GCMR Associates (Freelance))",
+    role: "Software Analyst",
+    company: "GCMR Associates",/*  */
     duration: "Dec 2022 - July 2023",
     description: "https://tinyurl.com/1clinic| 1.Developed a comprehensive Clinic Management System and Record Management System.2.Leveraging AI to optimise learning efficiency by 72% enabling seamless integration and UI optimisation ",
     technologies: ["Python","JS","UI/UX Design","React","Node","Neural Networks","AWS","Debugging"],
