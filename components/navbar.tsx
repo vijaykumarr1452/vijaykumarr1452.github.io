@@ -20,7 +20,7 @@ const navItems = [
   { name: "Contact", path: "#contact" },
 ]
 
-export function Navbar() {
+export unction Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
