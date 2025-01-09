@@ -93,7 +93,7 @@ export function Footer() {
               {[ 
                 { icon: Github, href: "https://github.com/vijaykumarr1452", color: "text-purple-500" },
                 { icon: Linkedin, href: "https://linkedin.com/in/rachuri-vijaykumar", color: "text-blue-500" },
-                { icon: Twitter, href: "https://twitter.com/vijay_viju1", color: "text-sky-500" },
+                { icon: Twitter, href: "https://twitter.com/liveordev", color: "text-sky-500" },
                 { icon: Mail, href: "mailto:vijaykumarit45@gmail.com", color: "text-red-500" },
                 { icon: Users, href: "https://dev.to/vijayr00", color: "text-green-500" }
               ].map((social, index) => (
@@ -109,9 +109,9 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="relative"
                   >
-                    <social.icon className={`h-6 w-6 transition-all duration-300 ${social.color}`} />
-                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-90 transition-opacity duration-300 animate-ping bg-current"></span>
-                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-300 bg-current blur-sm"></span>
+                    <social.icon className={`h-6 w-6 transition-all duration-100 ${social.color}`} />
+                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-90 transition-opacity duration-100 animate-ping bg-current"></span>
+                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-150 bg-current blur-sm"></span>
                   </a>
                 </Button>
               ))}
