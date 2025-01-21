@@ -71,7 +71,7 @@ export function Footer() {
               <div className="absolute -inset-2 rounded-full opacity-20 animate-ping bg-gradient-to-r from-primary via-secondary to-primary"></div>
             </div>
             {[ 
-              "© 2024 Vijay Rachuri. Made with 🧡 .",
+              "© 2023 Vijay Rachuri. Made with 🧡 .",
               // "Created by VIJAY RACHURI",
               // "Phone: +91 8186916414",
               // "Email: vijaykumarit45@gmail.com"
@@ -93,7 +93,7 @@ export function Footer() {
               {[ 
                 { icon: Github, href: "https://github.com/vijaykumarr1452", color: "text-purple-500" },
                 { icon: Linkedin, href: "https://linkedin.com/in/rachuri-vijaykumar", color: "text-blue-500" },
-                { icon: Twitter, href: "https://twitter.com/liveordev", color: "text-sky-500" },
+                { icon: Twitter, href: "https://twitter.com/", color: "text-sky-500" },
                 { icon: Mail, href: "mailto:vijaykumarit45@gmail.com", color: "text-red-500" },
                 { icon: Users, href: "https://dev.to/vijayr00", color: "text-green-500" }
               ].map((social, index) => (
