@@ -23,7 +23,7 @@ type Experience = {
 const experiences = [
   {
     role: "Software Engineer 1 ",
-    company: "Control F",
+    company: "Control FHR",
     duration: "MAY 2024 - Present",
     description: "Enabled efficient tracking and management of client information with RBAC Solutions.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
     technologies: ["Python","React","Django","AWS","UI/UX","Postman"],
@@ -148,7 +148,7 @@ export function ExperienceSection() {
                 >
                   <div>
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 relative rounded-full overflow-hidden bg-white p-1">
+{/*                       <div className="w-12 h-12 relative rounded-full overflow-hidden bg-white p-1">
                         {/* <Image
                           src={experience.companyLogo}
                           alt={experience.company}
@@ -157,7 +157,7 @@ export function ExperienceSection() {
                           style={{
                             objectFit: "cover"
                           }} /> */}
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="text-xl font-semibold text-white">{experience.role}</h3>
                         <p className="text-sm text-gray-200">{experience.company}</p>
