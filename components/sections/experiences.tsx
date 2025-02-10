@@ -33,7 +33,7 @@ const experiences = [
   {
     role: "Software Analyst",
     company: "GCMR Associates",/*  */
-    duration: "Dec 2022 - July 2023",
+    duration: "Aug 2023 - Mar 2024",
     description: "https://tinyurl.com/1clinic| 1.Developed a comprehensive Clinic Management System and Record Management System.2.Leveraging AI to optimise learning efficiency by 72% enabling seamless integration and UI optimisation ",
     technologies: ["Python","JS","UI/UX Design","React","Node","Neural Networks","AWS","Debugging"],
     // companyLogo: "/placeholder.svg?height=48&width=48",
