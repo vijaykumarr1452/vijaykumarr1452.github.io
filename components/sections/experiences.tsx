@@ -49,7 +49,7 @@ const experiences = [
     color: "from-green-400 to-green-600",
   },
   // {
-  //   role: "Teaching Assistant",
+  //   role: "Student",
   //   company: "Ace Academy",
   //   duration: "Nov 2023 - Feb 2024",
   //   description: "Helped 8 fellow peers in GATE CS & GATE Data Science 2024 and achieved 952 rank(GATE DA) & 1387 rank(GATE CS). ",
@@ -148,7 +148,7 @@ export function ExperienceSection() {
                 >
                   <div>
                     <div className="flex items-center space-x-4 mb-4">
-{/*                       <div className="w-12 h-12 relative rounded-full overflow-hidden bg-white p-1">
+                      {/* <div className="w-12 h-12 relative rounded-full overflow-hidden bg-white p-1">
                         {/* <Image
                           src={experience.companyLogo}
                           alt={experience.company}
@@ -156,7 +156,7 @@ export function ExperienceSection() {
                           sizes="100vw"
                           style={{
                             objectFit: "cover"
-                          }} /> */}
+                          }} /> 
                       </div> */}
                       <div>
                         <h3 className="text-xl font-semibold text-white">{experience.role}</h3>
