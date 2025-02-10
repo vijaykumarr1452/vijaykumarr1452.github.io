@@ -24,7 +24,7 @@ const experiences = [
   {
     role: "Software Engineer 1 ",
     company: "Control F",
-    duration: "OCT 2023 - Present",
+    duration: "MAY 2024 - Present",
     description: "Enabled efficient tracking and management of client information with RBAC Solutions.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
     technologies: ["Python","React","Django","AWS","UI/UX","Postman"],
     // companyLogo: "/placeholder.svg?height=48&width=48",
