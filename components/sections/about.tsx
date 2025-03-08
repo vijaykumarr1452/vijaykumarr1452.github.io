@@ -110,9 +110,7 @@ export function AboutSection() {
                   >
                    Hi,I’m <b>Vijay!</b> A software developer with a knack for solving problems and turning ideas into scalable solutions bringing ideas to life through clean code and thoughtful design. <br /> <br />
                    
-                   With around 20 months of experience as a full-stack developer in a startup,I’ve worked on building robust <p
-      style={{ color: "blue", textDecoration: "underline" }}
-    >FinTech SAAS</p> using Django, React.js, Java, Python and AWS. <br /> <br />
+                   With around 20 months of experience as a full-stack developer in a startup,I’ve worked on building robust <p style={{ color: "blue", textDecoration: "underline" }}>FinTech SAAS</p> using Django, React.js, Java, Python and AWS. <br/> <br/>
                    
                    I’m passionate about continuous learning,which is why I’m always diving into new technologies <a
       href="https://github.com/vijaykumarr1452/"
