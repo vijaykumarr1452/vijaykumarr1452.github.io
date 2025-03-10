@@ -24,7 +24,7 @@ const experiences = [
   {
     role: "Software Engineer 1 ",
     company: "Control FHR",
-    duration: "APR 2024 - Present",
+    duration: "Apr 2024 - Present",
     description: "Enabled efficient tracking and management of client information with RBAC Solutions.Ensuring robust and efficient performance, seamless data management and integration with focus on efficient task management and scheduling. ",
     technologies: ["Python","React","Django","AWS","UI/UX","Postman"],
     // companyLogo: "/placeholder.svg?height=48&width=48",
@@ -32,8 +32,8 @@ const experiences = [
   },
   {
     role: "Software Analyst",
-    company: "GCMR Associates",/*  */
-    duration: "Aug 2023 - Mar 2024",
+    company: "GCMR ",/*  */
+    duration: "Aug 2023 - Feb 2024",
     description: "Developed a comprehensive Clinic Management System and Record Management System.2.Leveraging AI to optimise learning efficiency by 72% enabling seamless integration and UI optimisation ",
     technologies: ["Python","JS","UI/UX Design","React","Node","Neural Networks","AWS","Debugging"],
     // companyLogo: "/placeholder.svg?height=48&width=48",
@@ -44,7 +44,7 @@ const experiences = [
     company: "AI Educator",
     duration: "May 2023",
     description: "Worked on auto-score feature model which impacted the accuracy and precision metrics to 96 which enabled more accurate data analysis of student scripts.",
-    technologies: ["Neural Networks", "Machine Learning","AWS", "ANN", "CNN","Data Analysis"],
+    technologies: ["Neural Networks", "Machine Learning","AWS", "Tensorflow", "NLP", "Word Embedding", "ANN" ],
     // companyLogo: "/placeholder.svg?height=48&width=48",
     color: "from-green-400 to-green-600",
   },
