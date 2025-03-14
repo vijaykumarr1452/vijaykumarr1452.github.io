@@ -15,9 +15,9 @@ export default function Home() {
       <AboutSection />
       <ProjectSection/>
       <SkillSection/>
-      <ExperienceSection/>
+{/*       <ExperienceSection/> */}
       {/* <EducationSection/> */}
-      <EducationSection/>
+{/*       <EducationSection/> */}
       <ContactSection/>
     </div>
   )
