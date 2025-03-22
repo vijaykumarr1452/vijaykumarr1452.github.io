@@ -10,21 +10,21 @@ import { Menu, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import Image from "next/image"
 
-// const navItems = [
-//   { name: "Home", path: "#" },
-//   { name: "About", path: "#about" },
-//   { name: "Projects", path: "#projects" },
-//   { name: "Skills", path: "#skills" },
-//   { name: "Experience", path: "#experiences" },
-//   { name: "Education", path: "#education" },
-//   { name: "Contact", path: "#contact" },
-// ]
+const navItems = [
+  { name: "Home", path: "#" },
+  { name: "About", path: "#about" },
+  { name: "Projects", path: "#projects" },
+  { name: "Skills", path: "#skills" },
+  { name: "Experience", path: "#experiences" },
+  { name: "Education", path: "#education" },
+  { name: "Contact", path: "#contact" },
+]
 
-// export function Navbar() {
-//   const [isScrolled, setIsScrolled] = useState(false)
-//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-//   const [mounted, setMounted] = useState(false)
-//   const pathname = usePathname()
+export function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -146,4 +146,5 @@ import Image from "next/image"
       </motion.div>
     </motion.nav>
   )
+
 }
