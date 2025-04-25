@@ -17,7 +17,7 @@ export function Footer() {
     }, 2000)
 
     const rotationInterval = setInterval(() => {
-      setImageRotation(prev => (prev + 5) % 360)
+      setImageRotation(prev => (prev + 5) % 300)
     }, 100)
 
     const glowInterval = setInterval(() => {
@@ -51,7 +51,7 @@ export function Footer() {
   
 
   return (
-    (<footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-300">
+    (<footer className="w-full border-t bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 transition-colors duration-200">
       <div className="container mx-auto px-2 py-2">
         <div className="flex flex-col items-center justify-between space-y-2 md:flex-row md:space-y-0">
           <div className="md:space-x-2 md:space-y-5 flex flex-wrap items-center md:items-start">
@@ -59,8 +59,8 @@ export function Footer() {
               <Image
                 src="https://tinyurl.com/faviconvj"
                 alt="Vijay R"
-                width={50}
-                height={50}
+                width={45}
+                height={45}
                 className="rounded-full border-4 border-primary shadow-lg transition-all duration-300 hover:scale-100 group-hover:shadow-primary/50"
                 style={{
                   // transform: `rotate(${imageRotation}deg)`,
@@ -93,7 +93,7 @@ export function Footer() {
               {[ 
                 { icon: Github, href: "https://github.com/vijaykumarr1452", color: "text-purple-500" },
                 { icon: Linkedin, href: "https://linkedin.com/in/rachuri-vijaykumar", color: "text-blue-500" },
-                { icon: Twitter, href: "https://twitter.com/", color: "text-sky-500" },
+                { icon: Twitter, href: "https://twitter.com/liveasdev", color: "text-sky-500" },
                 { icon: Mail, href: "mailto:vijaykumarit45@gmail.com", color: "text-red-500" },
                 { icon: Users, href: "https://dev.to/vijayr00", color: "text-green-500" }
               ].map((social, index) => (
@@ -101,7 +101,7 @@ export function Footer() {
                   key={index}
                   variant="ghost"
                   size="icon"
-                  className={`group transition-all duration-300 transform hover:scale-110 hover:rotate-6 ${social.color} hover:bg-${social.color}/10`}
+                  className={`group transition-all duration-200 transform hover:scale-105 hover:rotate-6 ${social.color} hover:bg-${social.color}/10`}
                 >
                   <a
                     href={social.href}
@@ -109,9 +109,9 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="relative"
                   >
-                    <social.icon className={`h-6 w-6 transition-all duration-100 ${social.color}`} />
-                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-90 transition-opacity duration-100 animate-ping bg-current"></span>
-                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-150 bg-current blur-sm"></span>
+                    <social.icon className={`h-6 w-6 transition-all duration-50 ${social.color}`} />
+                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-90 transition-opacity duration-50 animate-ping bg-current"></span>
+                    <span className="absolute -inset-2 rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-50 bg-current blur-sm"></span>
                   </a>
                 </Button>
               ))}
